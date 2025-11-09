@@ -40,3 +40,24 @@ boolean full = s.isFull();
 - This is a basic stack implementation for educational purposes. For production use, consider using Java's built-in `Deque` or `Stack` classes from the Java Collections Framework.
 - The stack has a fixed size; attempting to push onto a full stack or pop from an empty stack will result in an exception.
 - This implementation does not support dynamic resizing.
+
+### TEMPORARY: REMOVE LATER
+This section contains helpful, but removable, artifacts for development and quick testing:
+Quick test data:
+push sequence: [1,2,3,4,5]
+expected top after pushes: 5
+expected pop sequence: 5,4,3,2,1
+Local debug commands:
+javac -d out implementations/stack/src/Stack.java
+java -cp out your.package.Main
+Development checklist:
+<input></input>Add JUnit tests for boundary conditions
+<input></input>Add null-handling note if needed
+<input></input>Consider dynamic resizing or wrapper using ArrayDeque
+Notes for removal: delete the whole "TEMPORARY: REMOVE LATER" section before finalizing the module or when migrating tests into CI.
+Tests
+Add JUnit tests covering:
+pushing until full
+popping until empty
+peek/top behavior on empty stack
+generic typing behavior
