@@ -6,7 +6,7 @@
  * int sumRange(int left, int right) Returns the sum of the elements of nums between indices left and right inclusive (i.e. nums[left] + nums[left + 1] + ... + nums[right]).*/
 public class NumArray {
 
-    int[] prefixSum;
+    private final int[] prefixSum;
 
     public NumArray(int[] nums){
         prefixSum = new int[nums.length];
